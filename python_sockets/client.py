@@ -8,9 +8,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
     print(f"Conectado al servidor simple en {HOST}:{PORT}")
 
-    # Recibir el mensaje del servidor
-    data = s.recv(1024) # Recibe hasta 1024 bytes
-    message_received = data.decode('utf-8') # Decodifica los bytes a texto
+    
+    data = s.recv(1024) 
+    message_received = data.decode('utf-8') 
     print(f"Mensaje recibido: \"{message_received}\"")
 
 print("Cliente simple cerrado.")
