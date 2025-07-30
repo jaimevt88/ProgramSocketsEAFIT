@@ -53,3 +53,47 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# --- Archivos específicos de Python ---
+# Directorios de caché de bytecode
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Archivos de pruebas 
+.pytest_cache/
+.coverage
+
+# Archivos de registro (logs)
+*.log
+*.log.*
+
+# Archivos de bases de datos locales 
+*.db
+*.sqlite3
+
+# Archivos generados por paquetes de Python (ej. dist/, build/)
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Archivos de paquetes de instalación
+.Python/
+.Python-build/
+
+
+# Archivos de entorno 
+.env
+.flaskenv
+
+# --- Archivos generales del IDE ---
+.vscode/
+.idea/
+*.iml
