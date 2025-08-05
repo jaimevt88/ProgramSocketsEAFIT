@@ -29,6 +29,11 @@ receive_data(): Lee datos del socket en un búfer (buffer) y retorna la cantidad
 
 close_connection(): Cierra un socket, liberando los recursos de red asociados.
 
+La compilación de los archivos:
+
+ gcc server_cerv.c socket_utils.c -o server
+ gcc client_cerv.c socket_utils.c -o client
+
 
  */
 
